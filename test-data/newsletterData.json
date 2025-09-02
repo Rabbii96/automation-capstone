@@ -1,0 +1,86 @@
+{
+    "validEmails": [
+        {
+            "email": "newsletter.test@example.com",
+            "description": "Standard valid email for newsletter subscription"
+        },
+        {
+            "email": "marketing.test@company.org",
+            "description": "Corporate email for marketing newsletter"
+        },
+        {
+            "email": "user.email+newsletter@domain.co.uk",
+            "description": "Email with plus sign and subdomain"
+        }
+    ],
+    "invalidEmails": [
+        {
+            "email": "invalid-email",
+            "description": "Missing @ and domain"
+        },
+        {
+            "email": "test@",
+            "description": "Missing domain part"
+        },
+        {
+            "email": "@example.com",
+            "description": "Missing local part"
+        },
+        {
+            "email": "test..email@example.com",
+            "description": "Double dots in local part"
+        },
+        {
+            "email": "test@example",
+            "description": "Missing top-level domain"
+        },
+        {
+            "email": "",
+            "description": "Empty email field"
+        }
+    ],
+    "edgeCaseEmails": [
+        {
+            "email": "very.long.email.address.that.exceeds.normal.length.limits.for.testing.purposes@verylongdomainnamethatshouldtestboundaryconditions.com",
+            "description": "Very long email address for boundary testing"
+        },
+        {
+            "email": "test+special@example.com",
+            "description": "Email with plus sign"
+        },
+        {
+            "email": "test.dots@example.com",
+            "description": "Email with dots in local part"
+        },
+        {
+            "email": "test_underscore@example.com",
+            "description": "Email with underscore"
+        },
+        {
+            "email": "test-dash@example.com",
+            "description": "Email with dash"
+        },
+        {
+            "email": "international@münchen.de",
+            "description": "International domain with special characters"
+        },
+        {
+            "email": "unicode@测试.com",
+            "description": "Unicode characters in domain"
+        }
+    ],
+    "testScenarios": {
+        "subscriptionSuccess": {
+            "email": "success.test@example.com",
+            "expectedMessage": ["subscrib", "thank", "success", "confirm"]
+        },
+        "duplicateSubscription": {
+            "email": "frabbif96@gmail.com",
+            "expectedMessage": ["already", "exist", "duplicate", "subscribed"]
+        },
+        "emptyField": {
+            "email": "",
+            "expectedMessage": ["required", "empty", "invalid", "error"]
+        }
+    }
+}

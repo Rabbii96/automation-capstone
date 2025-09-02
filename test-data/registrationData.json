@@ -1,0 +1,53 @@
+{
+  "validRegistrations": [
+    {
+      "gender": "male",
+      "firstName": "John",
+      "lastName": "Doe",
+      "day": "15",
+      "month": "1",
+      "year": "1990",
+      "email": "johndoe123456@example.com",
+      "company": "Test Company",
+      "newsletter": true,
+      "password": "SecurePass123",
+      "confirmPassword": "SecurePass123"
+    }
+  ],
+  "invalidRegistrations": [
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "password": "",
+      "confirmPassword": "",
+      "description": "Empty required fields"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "User",
+      "email": "invalid-email",
+      "password": "123",
+      "confirmPassword": "456",
+      "description": "Invalid email and password mismatch"
+    }
+  ],
+  "edgeCases": [
+    {
+      "firstName": "VeryLongFirstNameThatExceedsNormalLimits",
+      "lastName": "VeryLongLastNameThatExceedsNormalLimits",
+      "email": "test@example.com",
+      "password": "ValidPass123",
+      "confirmPassword": "ValidPass123",
+      "description": "Very long names"
+    },
+    {
+      "firstName": "A",
+      "lastName": "B",
+      "email": "short@e.co",
+      "password": "Pass123",
+      "confirmPassword": "Pass123",
+      "description": "Very short valid data"
+    }
+  ]
+}

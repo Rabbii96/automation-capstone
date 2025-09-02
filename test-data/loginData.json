@@ -1,0 +1,41 @@
+{
+  "validUsers": [
+    {
+      "email": "frabbif96@gmail.com",
+      "password": "123456"
+    },
+    {
+      "email": "testuser1@example.com",
+      "password": "password123"
+    }
+  ],
+  "invalidUsers": [
+    {
+      "email": "invalid@email.com",
+      "password": "wrongpassword",
+      "expectedError": "Login was unsuccessful"
+    },
+    {
+      "email": "notanemail",
+      "password": "123456",
+      "expectedError": "Please enter a valid email address"
+    },
+    {
+      "email": "",
+      "password": "",
+      "expectedError": "Please enter your email"
+    }
+  ],
+  "edgeCases": [
+    {
+      "email": "test@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com",
+      "password": "123456",
+      "description": "Very long email"
+    },
+    {
+      "email": "frabbif96@gmail.com",
+      "password": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "description": "Very long password"
+    }
+  ]
+}

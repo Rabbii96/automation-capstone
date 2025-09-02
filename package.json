@@ -1,0 +1,39 @@
+{
+  "name": "automation-capstone-project",
+  "version": "1.0.0",
+  "description": "This project implements comprehensive automation testing for the NopCommerce demo e-commerce website using Playwright. The tests cover 8 key features with pass cases, fail cases, and edge cases for each functionality.",
+  "main": "playwright.config.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0",
+    "playwright-core": "^1.55.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  },
+  "scripts": {
+    "test": "npx playwright test",
+    "test:edge": "npx playwright test --project=msedge",
+    "test:chrome": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:ui": "npx playwright test --ui",
+    "test:debug": "npx playwright test --debug",
+    "test:login": "npx playwright test tests/login.spec.js",
+    "test:search": "npx playwright test tests/search.spec.js",
+    "test:cart": "npx playwright test tests/cart.spec.js",
+    "test:wishlist": "npx playwright test tests/wishlist.spec.js",
+    "test:currency": "npx playwright test tests/currency.spec.js",
+    "test:registration": "npx playwright test tests/registration.spec.js",
+    "test:navigation": "npx playwright test tests/site-navigation.spec.js",
+    "test:failed": "npx playwright test --last-failed",
+    "report": "npx playwright show-report",
+    "install:browsers": "npx playwright install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

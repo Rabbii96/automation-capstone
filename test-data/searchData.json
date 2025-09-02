@@ -1,0 +1,55 @@
+{
+  "validSearches": [
+    {
+      "searchTerm": "laptop",
+      "expectedResults": true
+    },
+    {
+      "searchTerm": "computer",
+      "expectedResults": true
+    },
+    {
+      "searchTerm": "phone",
+      "expectedResults": true
+    }
+  ],
+  "invalidSearches": [
+    {
+      "searchTerm": "xyznonexistentproduct",
+      "expectedResults": false,
+      "expectedMessage": "No products were found"
+    },
+    {
+      "searchTerm": "!@#$%^&*()",
+      "expectedResults": false,
+      "description": "Special characters only"
+    }
+  ],
+  "edgeCases": [
+    {
+      "searchTerm": "",
+      "description": "Empty search"
+    },
+    {
+      "searchTerm": "a",
+      "description": "Single character search"
+    },
+    {
+      "searchTerm": "verylongsearchtermthatexceedsnormallimitsandmightcauseissues",
+      "description": "Very long search term"
+    },
+    {
+      "searchTerm": "   laptop   ",
+      "description": "Search with leading and trailing spaces"
+    }
+  ],
+  "advancedSearches": [
+    {
+      "searchTerm": "computer",
+      "category": "1",
+      "priceFrom": "100",
+      "priceTo": "1000",
+      "description": "Advanced search with filters"
+    }
+  ]
+}
