@@ -130,7 +130,9 @@ automation-capstone/
 ├── 📁 playwright-report/       # Generated HTML test reports
 ├── 📁 test-results/           # Test execution results & traces
 ├── 📁 docs/                   # Project documentation
-│   ├── Feature-Selection.md    # Business justification for features
+│   ├── Feature-Selection.md    # Original feature selection rationale
+│   ├── Feature-Business-Justification.md # 📋 Comprehensive business analysis
+│   ├── Feature-Business-Justification-GoogleDocs.txt # Google Docs format
 │   └── Test-Scenarios.md      # Detailed test case documentation
 │
 ├── 📄 playwright.config.js     # Playwright configuration
@@ -141,16 +143,18 @@ automation-capstone/
 
 ### 🎯 8 Core Features Tested
 
-| Feature | Purpose | Business Impact |
-|---------|---------|-----------------|
-| 🔐 **User Login** | Authentication & session management | Critical for user access |
-| 🔍 **Product Search** | Core functionality for product discovery | Essential for sales |
-| 🛒 **Shopping Cart** | E-commerce purchase flow | Direct revenue impact |
-| ❤️ **Wishlist** | User engagement & future purchases | Customer retention |
-| 💱 **Currency Change** | International market support | Global expansion |
-| 📧 **Newsletter** | Marketing & customer retention | Marketing effectiveness |
-| 👤 **User Registration** | New customer onboarding | User acquisition |
-| 🧭 **Site Navigation** | Accessibility & usability | User experience |
+| Feature | Purpose | Business Impact | Test Scenarios |
+|---------|---------|-----------------|----------------|
+| 🔐 **User Login** | Authentication & session management | Critical for user access | 9 scenarios |
+| 🔍 **Product Search** | Core functionality for product discovery | Essential for sales | 11 scenarios |
+| 🛒 **Shopping Cart** | E-commerce purchase flow | Direct revenue impact | 10 scenarios |
+| ❤️ **Wishlist** | User engagement & future purchases | Customer retention | 8 scenarios |
+| 💱 **Currency Change** | International market support | Global expansion | 8 scenarios |
+| 📧 **Newsletter** | Marketing & customer retention | Marketing effectiveness | 12 scenarios |
+| 👤 **User Registration** | New customer onboarding | User acquisition | 13 scenarios |
+| 🧭 **Site Navigation** | Accessibility & usability | User experience | 8 scenarios |
+
+📋 **Detailed Business Justification**: See [Feature-Business-Justification.md](docs/Feature-Business-Justification.md) for comprehensive analysis of each feature's business value, QA benefits, and risk mitigation strategies.
 
 ## �️ Installation & Setup
 
