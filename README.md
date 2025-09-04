@@ -7,6 +7,19 @@
 
 > **Comprehensive automation testing suite for NopCommerce demo e-commerce website using Playwright framework with cross-browser support and professional QA engineering practices.**
 
+## 📋 Table of Contents
+
+1. [Project Overview](#-project-overview)
+2. [Quick Start Guide](#-quick-start-guide)
+3. [Installation & Setup](#-installation--setup)
+4. [Running Tests](#-running-tests)
+5. [Project Structure](#-project-structure)
+6. [Test Coverage](#-test-coverage--results)
+7. [Technologies Used](#-technologies--tools)
+8. [Troubleshooting](#-troubleshooting)
+9. [Contributing](#-contributing)
+10. [Author](#-author)
+
 ## 📊 Project Overview
 
 This capstone project implements end-to-end automation testing for the NopCommerce demo e-commerce platform. The project demonstrates professional QA engineering skills with comprehensive test coverage, cross-browser testing, and industry-standard reporting.
@@ -14,10 +27,56 @@ This capstone project implements end-to-end automation testing for the NopCommer
 ### 🎯 Key Metrics
 - **480 Total Test Cases** across 6 browser configurations
 - **8 Core Features** automated with complete coverage
-- **68+ Unique Test Scenarios** covering pass/fail/edge cases
+- **79 Unique Test Scenarios** covering pass/fail/edge cases
 - **Cross-Browser Testing** (Chrome, Firefox, Safari, Edge, Mobile)
 - **Page Object Model** architecture for maintainable code
 - **Data-Driven Testing** with JSON test data files
+
+### 🏆 Academic Achievement
+- **Grade**: 440/400 marks (110% score)
+- **Professional Documentation** for academic submission
+- **Industry-Standard QA Practices**
+
+## 🚀 Quick Start Guide
+
+### Step 1: Prerequisites
+Before starting, ensure you have:
+- ✅ **Node.js** (v16 or higher) - [Download here](https://nodejs.org/)
+- ✅ **Git** - [Download here](https://git-scm.com/)
+- ✅ **Operating System**: Windows/macOS/Linux
+
+### Step 2: Clone & Install
+```bash
+# Clone the repository
+git clone https://github.com/Rabbii96/automation-capstone.git
+
+# Navigate to project directory
+cd automation-capstone
+
+# Install dependencies
+npm install
+
+# Install Playwright browsers
+npx playwright install
+```
+
+### Step 3: Run Your First Test
+```bash
+# Run all tests
+npm test
+
+# Run a specific test
+npx playwright test tests/login.spec.js
+
+# Run with visual UI
+npx playwright test --ui
+```
+
+### Step 4: View Results
+```bash
+# Open HTML report
+npx playwright show-report
+```
 
 ## 🎯 Testing Scope
 
@@ -35,96 +94,170 @@ This capstone project implements end-to-end automation testing for the NopCommer
 ## 🏗️ Project Structure
 
 ```
-├── pages/                  # Page Object Model classes
-│   ├── BasePage.js        # Base page with common functionality
-│   ├── LoginPage.js       # Login page interactions
-│   ├── SearchPage.js      # Search functionality
-│   ├── CartPage.js        # Shopping cart operations
-│   ├── WishlistPage.js    # Wishlist management
-│   ├── CurrencyPage.js    # Currency switching
-│   ├── NewsletterPage.js  # Newsletter subscription
-│   └── RegistrationPage.js # User registration
-├── tests/                 # Test specifications
-│   ├── site-navigation.spec.js # Site accessibility & navigation tests
-│   ├── login.spec.js      # Login functionality tests
-│   ├── search.spec.js     # Search functionality tests
-│   ├── cart.spec.js       # Shopping cart tests
-│   ├── wishlist.spec.js   # Wishlist functionality tests
-│   ├── currency.spec.js   # Currency change tests
-│   ├── newsletter.spec.js # Newsletter subscription tests
-│   └── registration.spec.js # User registration tests
-├── test-data/            # Test data files
-│   ├── loginData.json    # Login test data
-│   ├── registrationData.json # Registration test data
-│   ├── searchData.json   # Search test data
-│   └── newsletterData.json # Newsletter test data
-├── utils/                # Utility functions
-│   ├── TestUtils.js      # Common test utilities
-│   ├── global-setup.js   # Global test setup
-│   └── global-teardown.js # Global test teardown
-├── screenshots/          # Test screenshots
-├── docs/                 # Documentation
-└── playwright-report/    # Generated test reports
+automation-capstone/
+├── 📁 pages/                    # Page Object Model classes
+│   ├── BasePage.js             # Base page with common functionality  
+│   ├── LoginPage.js            # Login page interactions
+│   ├── SearchPage.js           # Search functionality
+│   ├── CartPage.js             # Shopping cart operations
+│   ├── WishlistPage.js         # Wishlist management
+│   ├── CurrencyPage.js         # Currency switching
+│   ├── NewsletterPage.js       # Newsletter subscription
+│   └── RegistrationPage.js     # User registration
+│
+├── 📁 tests/                   # Test specifications
+│   ├── login.spec.js           # ✅ Login functionality tests
+│   ├── search.spec.js          # ✅ Search functionality tests  
+│   ├── cart.spec.js            # ✅ Shopping cart tests
+│   ├── wishlist.spec.js        # ✅ Wishlist functionality tests
+│   ├── currency.spec.js        # ✅ Currency change tests
+│   ├── newsletter.spec.js      # ✅ Newsletter subscription tests
+│   ├── registration.spec.js    # ✅ User registration tests
+│   └── site-navigation.spec.js # ✅ Site accessibility & navigation
+│
+├── 📁 test-data/               # JSON test data files
+│   ├── loginData.json          # Login test scenarios
+│   ├── registrationData.json   # Registration test data
+│   ├── searchData.json         # Search test parameters  
+│   └── newsletterData.json     # Newsletter test data
+│
+├── 📁 utils/                   # Utility functions & helpers
+│   ├── TestUtils.js            # Common test utilities
+│   ├── global-setup.js         # Global test setup configuration
+│   └── global-teardown.js      # Global test cleanup
+│
+├── 📁 screenshots/             # Test failure screenshots
+├── 📁 playwright-report/       # Generated HTML test reports
+├── 📁 test-results/           # Test execution results & traces
+├── 📁 docs/                   # Project documentation
+│   ├── Feature-Selection.md    # Business justification for features
+│   └── Test-Scenarios.md      # Detailed test case documentation
+│
+├── 📄 playwright.config.js     # Playwright configuration
+├── 📄 package.json            # Node.js dependencies & scripts
+├── 📄 README.md               # This file
+└── 📄 LICENSE                 # MIT License
 ```
 
-## 🚀 Installation & Setup
+### 🎯 8 Core Features Tested
 
-### Prerequisites
-- Node.js (v16 or higher)
-- Git
-- Windows/macOS/Linux
+| Feature | Purpose | Business Impact |
+|---------|---------|-----------------|
+| 🔐 **User Login** | Authentication & session management | Critical for user access |
+| 🔍 **Product Search** | Core functionality for product discovery | Essential for sales |
+| 🛒 **Shopping Cart** | E-commerce purchase flow | Direct revenue impact |
+| ❤️ **Wishlist** | User engagement & future purchases | Customer retention |
+| 💱 **Currency Change** | International market support | Global expansion |
+| 📧 **Newsletter** | Marketing & customer retention | Marketing effectiveness |
+| 👤 **User Registration** | New customer onboarding | User acquisition |
+| 🧭 **Site Navigation** | Accessibility & usability | User experience |
 
-### Installation Steps
+## �️ Installation & Setup
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Rabbii96/nopcommerce-automation-testing.git
-   cd nopcommerce-automation-testing
-   ```
+### Method 1: Automatic Setup (Recommended)
+```bash
+# One-command setup (Windows PowerShell)
+git clone https://github.com/Rabbii96/automation-capstone.git; cd automation-capstone; npm install; npx playwright install
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+# One-command setup (macOS/Linux)
+git clone https://github.com/Rabbii96/automation-capstone.git && cd automation-capstone && npm install && npx playwright install
+```
 
-3. **Install Playwright browsers:**
-   ```bash
-   npx playwright install
-   ```
+### Method 2: Step-by-Step Setup
+#### Step 1: Clone Repository
+```bash
+git clone https://github.com/Rabbii96/automation-capstone.git
+cd automation-capstone
+```
+
+#### Step 2: Install Node Dependencies
+```bash
+npm install
+```
+
+#### Step 3: Install Browser Engines
+```bash
+# Install all browsers
+npx playwright install
+
+# Or install specific browsers
+npx playwright install chromium firefox webkit msedge
+```
+
+#### Step 4: Verify Installation
+```bash
+# Check Playwright installation
+npx playwright --version
+
+# Run a quick test
+npx playwright test tests/login.spec.js --headed
+```
 
 ## 🏃‍♂️ Running Tests
 
-### Quick Commands
+### Basic Commands
 ```bash
-# Run all tests
+# Run all tests (default: all browsers)
 npm test
 
-# Run tests by browser
-npm run test:chrome
-npm run test:firefox
-npm run test:safari
-npm run test:edge
-npm run test:mobile
-
-# Run tests in headed mode (visual)
-npm run test:headed
-
-# Generate reports
-npm run report
+# Run all tests with HTML report
+npm test && npx playwright show-report
 ```
 
-### Specific Test Execution
+### Browser-Specific Testing
 ```bash
-# Run specific feature
-npx playwright test tests/login.spec.js
-npx playwright test tests/cart.spec.js
-npx playwright test tests/newsletter.spec.js
+# Test individual browsers
+npm run test:chrome     # Google Chrome
+npm run test:firefox    # Mozilla Firefox  
+npm run test:safari     # Safari (macOS only)
+npm run test:edge       # Microsoft Edge
+npm run test:mobile     # Mobile browsers
+```
 
-# Run with specific browser
-npx playwright test --project=msedge tests/search.spec.js
+### Feature-Specific Testing
+```bash
+# Test individual features
+npx playwright test tests/login.spec.js        # Authentication tests
+npx playwright test tests/search.spec.js       # Search functionality
+npx playwright test tests/cart.spec.js         # Shopping cart tests
+npx playwright test tests/wishlist.spec.js     # Wishlist management
+npx playwright test tests/currency.spec.js     # Currency switching
+npx playwright test tests/newsletter.spec.js   # Newsletter subscription
+npx playwright test tests/registration.spec.js # User registration
+npx playwright test tests/site-navigation.spec.js # Navigation tests
+```
 
-# Run in headed mode for debugging
-npx playwright test --headed tests/registration.spec.js
+### Advanced Testing Options
+```bash
+# Visual debugging (opens browser)
+npx playwright test --headed
+
+# Interactive UI mode
+npx playwright test --ui
+
+# Debug specific test
+npx playwright test tests/login.spec.js --debug
+
+# Run failed tests only
+npx playwright test --last-failed
+
+# Run with specific project
+npx playwright test --project=chromium
+
+# Record video for all tests
+npx playwright test --video=on
+```
+
+### Reporting Commands
+```bash
+# Generate and open HTML report
+npx playwright show-report
+
+# Generate JSON report
+npx playwright test --reporter=json
+
+# Generate JUnit XML report  
+npx playwright test --reporter=junit
 ```
 
 ## 📊 Test Coverage & Results
@@ -145,99 +278,102 @@ npx playwright test --headed tests/registration.spec.js
 
 ## 🛠️ Technologies & Tools
 
-- **Test Framework:** Playwright v1.55.0
-- **Language:** JavaScript (Node.js)
-- **Architecture:** Page Object Model (POM)
-- **Reporting:** HTML Reports, Screenshots, Videos, Traces
-- **Browsers:** Chrome, Firefox, Safari, Edge, Mobile Chrome, Mobile Safari
-- **CI/CD Ready:** GitHub Actions compatible
-- **Data-Driven:** JSON test data files
+| Category | Technology | Purpose |
+|----------|------------|---------|
+| **Framework** | Playwright v1.55.0 | Cross-browser automation testing |
+| **Language** | JavaScript (Node.js) | Test script development |
+| **Architecture** | Page Object Model | Maintainable and scalable code structure |
+| **Browsers** | Chrome, Firefox, Safari, Edge | Cross-browser compatibility testing |
+| **Mobile** | Mobile Chrome, Mobile Safari | Responsive design testing |
+| **Reporting** | HTML, JSON, JUnit XML | Comprehensive test result reporting |
+| **Screenshots** | PNG capture on failure | Visual debugging and evidence |
+| **Videos** | MP4 recording on failure | Complete test execution recording |
+| **CI/CD** | GitHub Actions compatible | Continuous integration ready |
+| **Data** | JSON test data files | Data-driven testing approach |
 
-## 🏃‍♂️ Running Tests
+## 🧪 Test Configuration
 
-### Run All Tests
-```powershell
-npx playwright test
+### Test Environment
+- **Target Website**: [NopCommerce Demo](https://demo.nopcommerce.com/)
+- **Test Credentials**: frabbif96@gmail.com / 123456
+- **Base URL**: https://demo.nopcommerce.com/
+
+### Browser Matrix
+| Browser | Desktop | Mobile | Viewport |
+|---------|---------|--------|----------|
+| Chromium | ✅ | ✅ | 1280x720 / 375x667 |
+| Firefox | ✅ | ❌ | 1280x720 |
+| Safari | ✅ | ✅ | 1280x720 / 375x667 |
+| Edge | ✅ | ❌ | 1280x720 |
+
+### Timeout Settings
+- **Action Timeout**: 30 seconds
+- **Navigation Timeout**: 30 seconds  
+- **Test Timeout**: 60 seconds
+- **Global Timeout**: 30 minutes
+
+## 🐛 Troubleshooting
+
+### Common Issues & Solutions
+
+#### 1. Browser Installation Issues
+```bash
+# Install missing browsers
+npx playwright install
+npx playwright install chromium firefox webkit msedge
+
+# Check browser installation
+npx playwright install --help
 ```
 
-### Run Tests on Specific Browser
-```powershell
-# Edge browser only
-npx playwright test --project=msedge
+#### 2. Test Failures
+```bash
+# Run tests in headed mode to see what's happening
+npx playwright test --headed
 
-# Chrome browser only
-npx playwright test --project=chromium
+# Run with debug mode for step-by-step execution
+npx playwright test --debug tests/login.spec.js
 
-# Firefox browser only
-npx playwright test --project=firefox
-```
-
-### Run Specific Test File
-```powershell
-# Login tests only
-npx playwright test tests/login.spec.js
-
-# Search tests only
-npx playwright test tests/search.spec.js
-
-# Cart tests only
-npx playwright test tests/cart.spec.js
-```
-
-### Run Tests with UI Mode
-```powershell
-npx playwright test --ui
-```
-
-### Run Tests in Debug Mode
-```powershell
-npx playwright test --debug
-```
-
-### Re-run Failed Tests Only
-```powershell
-npx playwright test --last-failed
-```
-
-## 📊 Test Reports
-
-### View HTML Report
-```powershell
+# Check test results and screenshots
 npx playwright show-report
 ```
 
-### Generate and View Reports
-- **HTML Report**: Automatically generated in `playwright-report/`
-- **JSON Report**: Generated as `test-results.json`
-- **JUnit Report**: Generated as `test-results.xml`
+#### 3. Network/Connectivity Issues
+```bash
+# Test with increased timeout
+npx playwright test --timeout=60000
 
-## 🧪 Test Categories
+# Run single test to isolate issues
+npx playwright test tests/login.spec.js --headed
+```
 
-### Pass Cases (Happy Path)
-- Valid user login with correct credentials
-- Successful product search with existing terms
-- Adding products to cart and wishlist
-- Currency changes with valid selections
-- Newsletter subscription with valid email
+#### 4. Permission Issues
+```bash
+# On Windows, run as administrator
+# On macOS/Linux, check file permissions
+chmod +x node_modules/.bin/playwright
+```
 
-### Fail Cases (Negative Testing)
-- Login with invalid credentials
-- Search for non-existent products
-- Invalid email formats for newsletter
-- Attempting unauthorized operations
+#### 5. Node.js Version Issues
+```bash
+# Check Node.js version (should be 16+)
+node --version
 
-### Edge Cases (Boundary Testing)
-- Very long input strings
-- Empty fields and null values
-- Maximum quantity limits
-- Special characters and SQL injection attempts
-- Browser refresh and session persistence
+# Update Node.js if needed
+# Visit: https://nodejs.org/
+```
 
-## 🔧 Configuration
+### Debug Commands
+```bash
+# Verbose logging
+npx playwright test --reporter=list
 
-### Test Credentials
-- **Email**: frabbif96@gmail.com
-- **Password**: 123456
+# Generate trace for failed tests
+npx playwright test --trace=on-first-retry
+
+# View trace files
+npx playwright show-trace trace.zip
+```
 
 ### Browser Configuration
 - Desktop Chrome, Firefox, Safari, Edge
@@ -416,5 +552,6 @@ npx playwright test --video=on
 - Data-driven testing approach
 - Screenshot and error handling
 - Cross-browser compatibility testing
-#   a u t o m a t i o n - c a p s t o n e  
+#   a u t o m a t i o n - c a p s t o n e 
+ 
  
