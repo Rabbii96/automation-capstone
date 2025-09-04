@@ -7,25 +7,33 @@
 
 > **Comprehensive automation testing suite for NopCommerce demo e-commerce website using Playwright framework with cross-browser support and professional QA engineering practices.**
 
+---
+
 ## 📋 Table of Contents
 
-1. [Project Overview](#-project-overview)
-2. [Quick Start Guide](#-quick-start-guide)
-3. [Installation & Setup](#-installation--setup)
-4. [Running Tests](#-running-tests)
-5. [Project Structure](#-project-structure)
-6. [Test Coverage](#-test-coverage--results)
-7. [Technologies Used](#-technologies--tools)
-8. [Troubleshooting](#-troubleshooting)
-9. [Contributing](#-contributing)
-10. [Author](#-author)
+1. [📊 Project Overview](#-project-overview)
+2. [🚀 Quick Start Guide](#-quick-start-guide)
+3. [🛠️ Installation & Setup](#-installation--setup)
+4. [🏃‍♂️ Running Tests](#-running-tests)
+5. [🏗️ Project Structure](#-project-structure)
+6. [🎯 Features Tested](#-features-tested)
+7. [📊 Test Coverage & Results](#-test-coverage--results)
+8. [🛠️ Technologies & Tools](#-technologies--tools)
+9. [🧪 Test Configuration](#-test-configuration)
+10. [🐛 Troubleshooting](#-troubleshooting)
+11. [🏆 Project Highlights](#-project-highlights)
+12. [📈 Future Enhancements](#-future-enhancements)
+13. [🤝 Contributing](#-contributing)
+14. [📄 License & Author](#-license--author)
+
+---
 
 ## 📊 Project Overview
 
 This capstone project implements end-to-end automation testing for the NopCommerce demo e-commerce platform. The project demonstrates professional QA engineering skills with comprehensive test coverage, cross-browser testing, and industry-standard reporting.
 
 ### 🎯 Key Metrics
-- **480 Total Test Cases** across 6 browser configurations
+- **474 Total Test Cases** across 6 browser configurations
 - **8 Core Features** automated with complete coverage
 - **79 Unique Test Scenarios** covering pass/fail/edge cases
 - **Cross-Browser Testing** (Chrome, Firefox, Safari, Edge, Mobile)
@@ -36,6 +44,8 @@ This capstone project implements end-to-end automation testing for the NopCommer
 - **Grade**: 440/400 marks (110% score)
 - **Professional Documentation** for academic submission
 - **Industry-Standard QA Practices**
+
+---
 
 ## 🚀 Quick Start Guide
 
@@ -78,85 +88,9 @@ npx playwright test --ui
 npx playwright show-report
 ```
 
-## 🎯 Testing Scope
+---
 
-### 8 Key Features Automated:
-
-1. **🔐 User Login** - Critical for user authentication and session management
-2. **🔍 Product Search** - Core functionality for product discovery
-3. **🛒 Shopping Cart** - Essential for e-commerce purchase flow
-4. **❤️ Wishlist** - Important for user engagement and future purchases
-5. **💱 Currency Change** - Supports international users
-6. **📧 Newsletter Subscription** - Marketing and customer retention
-7. **👤 User Registration** - New customer onboarding
-8. **🧭 Site Navigation** - Basic accessibility and usability
-
-## 🏗️ Project Structure
-
-```
-automation-capstone/
-├── 📁 pages/                    # Page Object Model classes
-│   ├── BasePage.js             # Base page with common functionality  
-│   ├── LoginPage.js            # Login page interactions
-│   ├── SearchPage.js           # Search functionality
-│   ├── CartPage.js             # Shopping cart operations
-│   ├── WishlistPage.js         # Wishlist management
-│   ├── CurrencyPage.js         # Currency switching
-│   ├── NewsletterPage.js       # Newsletter subscription
-│   └── RegistrationPage.js     # User registration
-│
-├── 📁 tests/                   # Test specifications
-│   ├── login.spec.js           # ✅ Login functionality tests
-│   ├── search.spec.js          # ✅ Search functionality tests  
-│   ├── cart.spec.js            # ✅ Shopping cart tests
-│   ├── wishlist.spec.js        # ✅ Wishlist functionality tests
-│   ├── currency.spec.js        # ✅ Currency change tests
-│   ├── newsletter.spec.js      # ✅ Newsletter subscription tests
-│   ├── registration.spec.js    # ✅ User registration tests
-│   └── site-navigation.spec.js # ✅ Site accessibility & navigation
-│
-├── 📁 test-data/               # JSON test data files
-│   ├── loginData.json          # Login test scenarios
-│   ├── registrationData.json   # Registration test data
-│   ├── searchData.json         # Search test parameters  
-│   └── newsletterData.json     # Newsletter test data
-│
-├── 📁 utils/                   # Utility functions & helpers
-│   ├── TestUtils.js            # Common test utilities
-│   ├── global-setup.js         # Global test setup configuration
-│   └── global-teardown.js      # Global test cleanup
-│
-├── 📁 screenshots/             # Test failure screenshots
-├── 📁 playwright-report/       # Generated HTML test reports
-├── 📁 test-results/           # Test execution results & traces
-├── 📁 docs/                   # Project documentation
-│   ├── Feature-Selection.md    # Original feature selection rationale
-│   ├── Feature-Business-Justification.md # 📋 Comprehensive business analysis
-│   ├── Feature-Business-Justification-GoogleDocs.txt # Google Docs format
-│   └── Test-Scenarios.md      # Detailed test case documentation
-│
-├── 📄 playwright.config.js     # Playwright configuration
-├── 📄 package.json            # Node.js dependencies & scripts
-├── 📄 README.md               # This file
-└── 📄 LICENSE                 # MIT License
-```
-
-### 🎯 8 Core Features Tested
-
-| Feature | Purpose | Business Impact | Test Scenarios |
-|---------|---------|-----------------|----------------|
-| 🔐 **User Login** | Authentication & session management | Critical for user access | 9 scenarios |
-| 🔍 **Product Search** | Core functionality for product discovery | Essential for sales | 11 scenarios |
-| 🛒 **Shopping Cart** | E-commerce purchase flow | Direct revenue impact | 10 scenarios |
-| ❤️ **Wishlist** | User engagement & future purchases | Customer retention | 8 scenarios |
-| 💱 **Currency Change** | International market support | Global expansion | 8 scenarios |
-| 📧 **Newsletter** | Marketing & customer retention | Marketing effectiveness | 12 scenarios |
-| 👤 **User Registration** | New customer onboarding | User acquisition | 13 scenarios |
-| 🧭 **Site Navigation** | Accessibility & usability | User experience | 8 scenarios |
-
-📋 **Detailed Business Justification**: See [Feature-Business-Justification.md](docs/Feature-Business-Justification.md) for comprehensive analysis of each feature's business value, QA benefits, and risk mitigation strategies.
-
-## �️ Installation & Setup
+## 🛠️ Installation & Setup
 
 ### Method 1: Automatic Setup (Recommended)
 ```bash
@@ -168,6 +102,7 @@ git clone https://github.com/Rabbii96/automation-capstone.git && cd automation-c
 ```
 
 ### Method 2: Step-by-Step Setup
+
 #### Step 1: Clone Repository
 ```bash
 git clone https://github.com/Rabbii96/automation-capstone.git
@@ -196,6 +131,8 @@ npx playwright --version
 # Run a quick test
 npx playwright test tests/login.spec.js --headed
 ```
+
+---
 
 ## 🏃‍♂️ Running Tests
 
@@ -264,6 +201,93 @@ npx playwright test --reporter=json
 npx playwright test --reporter=junit
 ```
 
+---
+
+## 🏗️ Project Structure
+
+```
+automation-capstone/
+├── 📁 pages/                    # Page Object Model classes
+│   ├── BasePage.js             # Base page with common functionality  
+│   ├── LoginPage.js            # Login page interactions
+│   ├── SearchPage.js           # Search functionality
+│   ├── CartPage.js             # Shopping cart operations
+│   ├── WishlistPage.js         # Wishlist management
+│   ├── CurrencyPage.js         # Currency switching
+│   ├── NewsletterPage.js       # Newsletter subscription
+│   └── RegistrationPage.js     # User registration
+│
+├── 📁 tests/                   # Test specifications
+│   ├── login.spec.js           # ✅ Login functionality tests
+│   ├── search.spec.js          # ✅ Search functionality tests  
+│   ├── cart.spec.js            # ✅ Shopping cart tests
+│   ├── wishlist.spec.js        # ✅ Wishlist functionality tests
+│   ├── currency.spec.js        # ✅ Currency change tests
+│   ├── newsletter.spec.js      # ✅ Newsletter subscription tests
+│   ├── registration.spec.js    # ✅ User registration tests
+│   └── site-navigation.spec.js # ✅ Site accessibility & navigation
+│
+├── 📁 test-data/               # JSON test data files
+│   ├── loginData.json          # Login test scenarios
+│   ├── registrationData.json   # Registration test data
+│   ├── searchData.json         # Search test parameters  
+│   └── newsletterData.json     # Newsletter test data
+│
+├── 📁 utils/                   # Utility functions & helpers
+│   ├── TestUtils.js            # Common test utilities
+│   ├── global-setup.js         # Global test setup configuration
+│   └── global-teardown.js      # Global test cleanup
+│
+├── 📁 screenshots/             # Test failure screenshots
+├── 📁 playwright-report/       # Generated HTML test reports
+├── 📁 test-results/           # Test execution results & traces
+├── 📁 docs/                   # Project documentation
+│   ├── Feature-Selection.md    # Original feature selection rationale
+│   ├── Feature-Business-Justification.md # 📋 Comprehensive business analysis
+│   ├── Feature-Business-Justification-GoogleDocs.txt # Google Docs format
+│   └── Test-Scenarios.md      # Detailed test case documentation
+│
+├── 📄 playwright.config.js     # Playwright configuration
+├── 📄 package.json            # Node.js dependencies & scripts
+├── 📄 README.md               # This file
+└── 📄 LICENSE                 # MIT License
+```
+
+---
+
+## 🎯 Features Tested
+
+### 8 Core Features with Business Justification
+
+| Feature | Purpose | Business Impact | Test Scenarios |
+|---------|---------|-----------------|----------------|
+| 🔐 **User Login** | Authentication & session management | Critical for user access | 9 scenarios |
+| 🔍 **Product Search** | Core functionality for product discovery | Essential for sales | 11 scenarios |
+| 🛒 **Shopping Cart** | E-commerce purchase flow | Direct revenue impact | 10 scenarios |
+| ❤️ **Wishlist** | User engagement & future purchases | Customer retention | 8 scenarios |
+| 💱 **Currency Change** | International market support | Global expansion | 8 scenarios |
+| 📧 **Newsletter** | Marketing & customer retention | Marketing effectiveness | 12 scenarios |
+| 👤 **User Registration** | New customer onboarding | User acquisition | 13 scenarios |
+| 🧭 **Site Navigation** | Accessibility & usability | User experience | 8 scenarios |
+
+📋 **Detailed Business Justification**: See [Feature-Business-Justification.md](docs/Feature-Business-Justification.md) for comprehensive analysis of each feature's business value, QA benefits, and risk mitigation strategies.
+
+### Feature Categories
+
+#### 🔴 Critical Features (Revenue Impact)
+- **User Login**: Customer account access and security
+- **Product Search**: Primary product discovery method
+- **Shopping Cart**: Direct purchase functionality
+- **User Registration**: Customer acquisition pipeline
+- **Site Navigation**: Foundation for all interactions
+
+#### 🟡 High-Value Features (Customer Experience)
+- **Wishlist**: User engagement and retention
+- **Currency Switching**: International market support
+- **Newsletter**: Marketing and communication channel
+
+---
+
 ## 📊 Test Coverage & Results
 
 | Feature | Pass Cases | Fail Cases | Edge Cases | Total Tests |
@@ -280,6 +304,13 @@ npx playwright test --reporter=junit
 
 **Cross-Browser Total: 79 × 6 browsers = 474 test executions**
 
+### Test Methodology
+- **✅ Pass Cases (24)**: Happy path scenarios validating expected functionality
+- **❌ Fail Cases (21)**: Negative testing ensuring proper error handling
+- **⚠️ Edge Cases (34)**: Boundary testing for unexpected scenarios
+
+---
+
 ## 🛠️ Technologies & Tools
 
 | Category | Technology | Purpose |
@@ -294,6 +325,8 @@ npx playwright test --reporter=junit
 | **Videos** | MP4 recording on failure | Complete test execution recording |
 | **CI/CD** | GitHub Actions compatible | Continuous integration ready |
 | **Data** | JSON test data files | Data-driven testing approach |
+
+---
 
 ## 🧪 Test Configuration
 
@@ -315,6 +348,14 @@ npx playwright test --reporter=junit
 - **Navigation Timeout**: 30 seconds  
 - **Test Timeout**: 60 seconds
 - **Global Timeout**: 30 minutes
+
+### Error Handling
+- **Screenshots**: Captured automatically on test failure
+- **Videos**: Recorded for failed tests in headless mode
+- **Traces**: Generated for debugging with --trace flag
+- **Retries**: Configured for 2 retries on failure
+
+---
 
 ## 🐛 Troubleshooting
 
@@ -379,40 +420,18 @@ npx playwright test --trace=on-first-retry
 npx playwright show-trace trace.zip
 ```
 
-### Browser Configuration
-- Desktop Chrome, Firefox, Safari, Edge
-- Mobile Chrome and Safari viewports
-- Screenshot on failure
-- Video recording on failure
-- Trace collection on retry
+### Performance Tips
+- Use `--workers=1` for debugging to run tests sequentially
+- Use `--headed` mode only for debugging (slower execution)
+- Clear browser data between tests with global setup/teardown
+- Use specific selectors to improve test reliability
 
-### Timeouts
-- Action timeout: 30 seconds
-- Navigation timeout: 30 seconds
-- Global test timeout: 60 seconds
-
-## 📈 Test Metrics & Coverage
-
-### Features Coverage
-- ✅ User Authentication (Login/Logout)
-- ✅ Product Search (Basic & Advanced)
-- ✅ Shopping Cart Management
-- ✅ Wishlist Operations
-- ✅ Currency Switching
-- ✅ Newsletter Subscription
-- ✅ User Registration
-- ✅ Site Navigation & Accessibility
-
-### Test Scenarios
-- **Total Test Cases**: 79 automated scenarios
-- **Pass Cases**: 24 scenarios (positive flow testing)
-- **Fail Cases**: 21 scenarios (negative validation testing)  
-- **Edge Cases**: 34 scenarios (boundary & unexpected behavior testing)
+---
 
 ## 🏆 Project Highlights
 
 ### Academic Excellence
-- **Capstone Project Grade**: 400/400 marks + 40 bonus = 440/400
+- **Capstone Project Grade**: 440/400 marks (110% achievement)
 - **Feature Selection**: Complete business justification for each feature
 - **Documentation**: Professional-grade documentation for academic submission
 - **QA Standards**: Industry-standard testing practices and methodologies
@@ -431,131 +450,103 @@ npx playwright show-trace trace.zip
 - **Detailed Reporting**: HTML reports with traces, screenshots, and videos
 - **CI/CD Ready**: Configured for continuous integration pipelines
 
-## 🐛 Troubleshooting
-
-### Common Issues
-
-1. **Browser Not Installed**
-   ```bash
-   npx playwright install msedge
-   npx playwright install chromium
-   ```
-
-2. **Tests Timing Out**
-   - Increase timeout in `playwright.config.js`
-   - Check network connectivity to demo site
-
-3. **Dependency Issues**
-   ```bash
-   rm -rf node_modules package-lock.json
-   npm install
-   ```
-
-4. **Path Issues**
-   - Ensure all file paths use forward slashes
-   - Check working directory
+---
 
 ## 📈 Future Enhancements
 
-- [ ] API Testing Integration
-- [ ] Visual Regression Testing
-- [ ] Performance Testing Suite
-- [ ] CI/CD Pipeline (GitHub Actions)
-- [ ] Docker Containerization
-- [ ] Allure Reporting
-- [ ] Database Testing
-- [ ] Security Testing
+### Planned Improvements
+- [ ] **API Testing Integration**: Add REST API testing for backend validation
+- [ ] **Visual Regression Testing**: Implement screenshot comparison testing
+- [ ] **Performance Testing Suite**: Add load testing and performance monitoring
+- [ ] **CI/CD Pipeline**: GitHub Actions workflow for automated testing
+- [ ] **Docker Containerization**: Containerized test execution environment
+- [ ] **Allure Reporting**: Enhanced reporting with Allure framework
+- [ ] **Database Testing**: Direct database validation for data integrity
+- [ ] **Security Testing**: Automated security vulnerability scanning
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Author
-
-**Rabbii96**
-- GitHub: [@Rabbii96](https://github.com/Rabbii96)
-- Email: frabbif96@gmail.com
-
-## 🙏 Acknowledgments
-
-- NopCommerce for providing the demo e-commerce platform
-- Playwright team for the excellent testing framework
-- Academic institution for the capstone project opportunity
-- Open source community for tools and inspiration
+### Potential Extensions
+- Integration with test management tools (TestRail, Zephyr)
+- Slack/Teams notifications for test results
+- Custom test data generation
+- Multi-environment testing (staging, production)
 
 ---
 
+## 🤝 Contributing
+
+We welcome contributions to improve this automation testing project!
+
+### How to Contribute
+1. **Fork the repository**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/automation-capstone.git
+   ```
+
+2. **Create a feature branch**
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+
+3. **Make your changes**
+   - Add new test scenarios
+   - Improve existing tests
+   - Update documentation
+   - Fix bugs
+
+4. **Commit your changes**
+   ```bash
+   git commit -m 'Add some amazing feature'
+   ```
+
+5. **Push to the branch**
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+
+6. **Open a Pull Request**
+   - Provide clear description of changes
+   - Include screenshots if applicable
+   - Reference any related issues
+
+### Contribution Guidelines
+- Follow existing code style and patterns
+- Add tests for new functionality
+- Update documentation as needed
+- Ensure all tests pass before submitting PR
+
+---
+
+## 📄 License & Author
+
+### License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### Author
+**Rabbii96**
+- 🐙 GitHub: [@Rabbii96](https://github.com/Rabbii96)
+- 📧 Email: frabbif96@gmail.com
+- 🎓 Academic Project: Automation Testing Capstone
+- 🏆 Achievement: 440/400 marks (110% score)
+
+### Acknowledgments
+- **NopCommerce** for providing the demo e-commerce platform
+- **Playwright Team** for the excellent testing framework
+- **Academic Institution** for the capstone project opportunity
+- **Open Source Community** for tools and inspiration
+
+---
+
+## 🌟 Repository Stats
+
+![GitHub stars](https://img.shields.io/github/stars/Rabbii96/automation-capstone?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Rabbii96/automation-capstone?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/Rabbii96/automation-capstone?style=social)
+
 ⭐ **If you find this project helpful, please give it a star!** ⭐
-   - Check internet connection
-   - Increase timeout in playwright.config.js
 
-3. **Screenshot Directory Missing**
-   - Screenshots folder is auto-created
-   - Ensure write permissions
+---
 
-### Debug Commands
-```powershell
-# Run with verbose logging
-npx playwright test --reporter=list
-
-# Run single test with trace
-npx playwright test tests/login.spec.js --trace on
-
-# Generate trace viewer
-npx playwright show-trace trace.zip
-```
-
-## 📝 Test Data Management
-
-### Data-Driven Testing
-- JSON files contain test data for different scenarios
-- Random data generation for unique test runs
-- Parameterized tests for multiple data sets
-
-### Test Data Files
-- `loginData.json`: Valid/invalid login credentials
-- `registrationData.json`: User registration data
-- `searchData.json`: Search terms and filters
-
-## 🎬 Video Recording
-
-### Recording Configuration
-- Videos recorded only on test failure
-- Saved in `test-results/` directory
-- MP4 format with full test execution
-
-### Manual Video Recording
-```powershell
-npx playwright test --video=on
-```
-
-## 🚦 Continuous Integration
-
-### GitHub Actions Support
-- Tests can run on push/pull request
-- Multi-browser execution
-- Artifact collection (reports, screenshots, videos)
-
-## 📚 Additional Resources
-
-### Playwright Documentation
-- [Playwright Official Docs](https://playwright.dev/)
-- [Best Practices](https://playwright.dev/docs/best-practices)
-- [API Reference](https://playwright.dev/docs/api/class-test)
-
-### Test Automation Patterns
-- Page Object Model implementation
-- Data-driven testing approach
-- Screenshot and error handling
-- Cross-browser compatibility testing
-#   a u t o m a t i o n - c a p s t o n e 
- 
- 
+**Last Updated**: September 5, 2025  
+**Project Status**: ✅ Complete and Ready for Academic Submission  
+**Total Files**: 35+ files with comprehensive test coverage  
+**Repository**: https://github.com/Rabbii96/automation-capstone
