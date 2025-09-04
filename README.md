@@ -416,3 +416,5 @@ npx playwright test --video=on
 - Data-driven testing approach
 - Screenshot and error handling
 - Cross-browser compatibility testing
+#   a u t o m a t i o n - c a p s t o n e  
+ 
