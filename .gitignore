@@ -10,6 +10,17 @@ playwright-report/
 screenshots/
 videos/
 traces/
+test-results.json
+test-results.xml
+
+# Temporary and backup files
+*.tmp
+*.temp
+*.bak
+*.old
+*-old.*
+*-backup.*
+README-Clean.md
 
 # Environment variables
 .env
